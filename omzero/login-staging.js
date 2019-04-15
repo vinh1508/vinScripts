@@ -2,7 +2,7 @@
 // @name            Omzero Get Access Token
 // @namespace       https://vfa-vinhtt.github.io
 // @description     get access_token
-// @version         1.0.0
+// @version         1.0.1
 // @icon
 // @author          vinhtt
 // @license         MIT
