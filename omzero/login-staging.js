@@ -1,8 +1,10 @@
 // ==UserScript==
+// @name            Omzero Get Access Token
 // @namespace       https://vfa-vinhtt.github.io
-// @name            Violentmonkey Script
-// @author          vinhtt
+// @description     get access_token
 // @version         1.0.0
+// @icon         
+// @author          vinhtt
 // @license         MIT
 // @connect         self
 // @run-at          document-idle
