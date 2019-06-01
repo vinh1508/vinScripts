@@ -2,7 +2,7 @@
 // @name         tangthuvien
 // @namespace    https://vfa-vinhtt.github.io/
 // @description  Tải truyện từ truyen.tangthuvien.vn định dạng epub
-// @version      1.0.1
+// @version      1.0.2
 // @icon         https://raw.githubusercontent.com/vfa-vinhtt/vinScripts/master/download-epub/tangthuvien-downloader.png
 // @author       vinhtt
 // @oujs:author  vinhtt
@@ -190,7 +190,8 @@
         $download = $('<a>', {
             class: 'btn btn-primary red-btn',
             href: '#download',
-            text: 'Tải xuống'
+            text: 'Tải xuống',
+            style: 'margin: 10px 0; display: block;'
         }),
         status,
         downloadStatus = function (label) {
@@ -240,7 +241,7 @@
         description: ebookDesc,
         tags: ebookType
     }).uuid(referrer);
-
+    $(".book-info .tag").height(100);
     $download.insertAfter(".book-info .tag a:last-child");
     $download.one('click contextmenu', function (e) {
         e.preventDefault();
