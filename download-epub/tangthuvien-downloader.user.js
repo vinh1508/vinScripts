@@ -2,7 +2,7 @@
 // @name         tangthuvien
 // @namespace    https://vfa-vinhtt.github.io/
 // @description  Tải truyện từ truyen.tangthuvien.vn định dạng epub
-// @version      1.0.2
+// @version      1.0.3
 // @icon         https://raw.githubusercontent.com/vfa-vinhtt/vinScripts/master/download-epub/tangthuvien-downloader.png
 // @author       vinhtt
 // @oujs:author  vinhtt
@@ -38,6 +38,7 @@
 
     function cleanHtml(str) {
         str = str.replace(/\s*Chương\s*\d+\s?:[^<\n]/, '');
+        str = str.replace(/\n/g,'\n<br/>\n');
         str = str.replace(/[^\x09\x0A\x0D\x20-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]+/gm, ''); // eslint-disable-line
         return '<div>' + str + '</div>';
     }
