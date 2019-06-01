@@ -2,8 +2,8 @@
 // @name         tangthuvien
 // @namespace    https://vfa-vinhtt.github.io/
 // @description  Tải truyện từ truyen.tangthuvien.vn định dạng epub
-// @version      1.0.0
-// @icon         
+// @version      1.0.1
+// @icon         https://raw.githubusercontent.com/vfa-vinhtt/vinScripts/master/download-epub/tangthuvien-downloader.png
 // @author       vinhtt
 // @oujs:author  vinhtt
 // @license      MIT
