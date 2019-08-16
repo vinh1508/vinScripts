@@ -2,7 +2,7 @@
 // @name            Omzero Get Access Token
 // @namespace       https://vfa-vinhtt.github.io
 // @description     get access_token
-// @version         1.0.4
+// @version         1.0.5
 // @icon
 // @author          vinhtt
 // @license         MIT
@@ -62,12 +62,12 @@
         let code = document.querySelector(".sel-code").value;
 
         let link = linkServer.replace("[env]", env).replace("[code]", code);
-        if(env === 'local'){
+        if (env === "local") {
             link = linkLocal;
-            if(code === 'cd009'){
-                link = link.replace('[port]',3009);
+            if (code === "cd009") {
+                link = link.replace("[port]", 3009);
             } else {
-                link = link.replace('[port]',3000);
+                link = link.replace("[port]", 3000);
             }
         }
         let $a = document.querySelector(".link-app");
