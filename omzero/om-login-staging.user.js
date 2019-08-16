@@ -2,7 +2,7 @@
 // @name            Omzero Get Access Token
 // @namespace       https://vfa-vinhtt.github.io
 // @description     get access_token
-// @version         1.0.5
+// @version         1.0.6
 // @icon
 // @author          vinhtt
 // @license         MIT
@@ -30,8 +30,11 @@
     let linkServer = `https://cdn-s3-[env]-apne1-[code].zero-events.com/user-app/index.html#/?${params}`;
 
     window.APP_PARAMS = params;
-
-    document.querySelector(".alert-warning").insertAdjacentHTML(
+    let $container =  document.querySelector(".alert-warning");
+    if(!$container) {
+        $container =  document.querySelector(".alert-success");
+    }
+    $container.insertAdjacentHTML(
         "beforeEnd",
         `
         <section>
