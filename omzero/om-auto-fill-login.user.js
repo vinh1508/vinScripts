@@ -16,14 +16,8 @@
 (function(window, document) {
     "use strict";
     setTimeout(() => {
-        var id_prefix = localStorage.getItem("id_prefix") || "";
-        var id_index = Number(localStorage.getItem("id_index") || 0) + 1;
-        document.querySelector('[name="username"]').value = id_prefix + "" + id_index;
         document.querySelector('[name="password"]').value = "11111111";
+        document.querySelector('[name="username"]').focus();
         document.querySelector('[type="submit"]').removeAttribute("disabled");
-
-        // save id_index
-        localStorage.setItem("id_index", id_index);
-        document.querySelector('[type="submit"]').click();
-    }, 1000);
+    });
 })(window, document);

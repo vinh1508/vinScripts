@@ -2,12 +2,12 @@
 // @name            Omzero Get Access Token
 // @namespace       https://vfa-vinhtt.github.io
 // @description     get access_token
-// @version         1.0.6
+// @version         1.0.7
 // @icon
 // @author          vinhtt
 // @license         MIT
 // @connect         self
-// @include         https://data-stg-jp.omronconnect.mobi/app/oauth2-frontend/static/result.html?*
+// @include         https://data-*.omronconnect.*/app/oauth2-frontend/static/result.html?*
 // @run-at          document-idle
 // @noframes
 // @grant none
